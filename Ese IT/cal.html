@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculaors</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="container">
+        <header id="my-header">
+            <header id="my-header">
+                <div class="menu">
+                    <div class="logo">
+                        <img src="./Images/logo-fupre.png" alt="">
+                    </div>
+                    <div class="nav">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#home">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="#home">ABOUT US</a>
+                                </li>
+                                <li>
+                                    <a href="#home">CONTACT US</a>
+                                </li>
+                                <li  id="null"><button class="close"  >X</button></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="toggle">
+                        <button id="btn">&#9776;</button>
+                    </div>
+                </div>
+                <div class="phy">
+                    <h3>Department of Physics</h3>
+                    <p>Federal University of Petroleum Resources Effurun</p>
+                    <div class="con">
+                        <button id="cont">Contact US</button>
+                    </div>
+                </div>
+        </header>
+        <div class="dd"><h3>Physics Calculators</h3></div>
+        <div class="calc">
+            
+            <div class="calculators">
+                <div class="ft">
+                    <p>V = u + at</p>
+                </div>
+                <div class="result">
+                    <p id="ur" class="p"></p>
+                    <p id="ar" class="p"></p>
+                    <p id="tr" class="p"></p>
+                    <p id="vr" class="p"></p>
+                </div>
+                <div class="enter">
+                    <form action="">
+                        <div class="inp">
+                            <input type="number" name="" id="u" placeholder="Enter u"> 
+                            <input type="number" name="" id="a" placeholder="Enter a">
+                            <input type="number" name="" id="t" placeholder="Enter t">
+                        </div>
+                        <button type="submit" id="vu">CALCULATE</button>
+                    </form>
+                </div>
+            </div>
+            <!-----calculator 2-->
+
+            <div class="calculators">
+                <div class="ft">
+                    <p>S = Ut + 1/2(at^2)</p>
+                </div>
+                <div class="result1">
+                    <p id="ur1" class="p"></p>
+                    <p id="ar1" class="p"></p>
+                    <p id="tr1" class="p"></p>
+                    <p id="sr" class="p"></p>
+                </div>
+                <div class="enter">
+                    <form action=""  id="sub">
+                        <div class="inp">
+                            <input type="number" name="" id="u1" placeholder="Enter u"> 
+                            <input type="number" name="" id="a1" placeholder="Enter a">
+                            <input type="number" name="" id="t1" placeholder="Enter t">
+                        </div>
+                        <button>CALCULATE</button>
+                    </form>
+                </div>
+            </div>
+            <!--calculator 2-->
+
+            <div class="calculators">
+                <div class="ft">
+                    <p>V^2 = u^2 + 2as</p>
+                </div>
+                <div class="result">
+                    <p id="ur2" class="p"></p>
+                    <p id="ar2" class="p"></p>
+                    <p id="sr2" class="p"></p>
+                    <p id="v2"  class="p"></p>
+                    <p id="vr2" class="p"></p>
+                </div>
+                <div class="enter">
+                    <form action="" id="form2">
+                        <div class="inp">
+                            <input type="number" name="" id="u2" placeholder="Enter u"> 
+                            <input type="number" name="" id="a2" placeholder="Enter a">
+                            <input type="number" name="" id="s2" placeholder="Enter S">
+                        </div>
+                        <button>CALCULATE</button>
+                    </form>
+                </div>
+         </div>
+
+                <!--calculator 3-->
+
+                <div class="calculators">
+                    <div class="ft">
+                        <p>F=(Gm1m2)/r2</p>
+                    </div>
+                    <div class="result">
+                        <p class="p">G = 6.674x10^-11 N/m2/kg2</p>
+                        <p id="m1r" class="p"></p>
+                        <p id="m2r" class="p"></p>
+                        <p id="rr" class="p"></p>
+                        <p id="f"  class="p"></p>
+                    </div>
+                    <div class="enter">
+                        <form action="" id="form3">
+                            <div class="inp">
+                                <input type="number" name="" id="m1" placeholder="Enter m1"> 
+                                <input type="number" name="" id="m2" placeholder="Enter m2">
+                                <input type="number" name="" id="r" placeholder="Enter r">
+                            </div>
+                            <button>CALCULATE</button>
+                        </form>
+                    </div>
+                </div>
+        </div>
+        <footer>
+            <p>Developed by Ese (Team Eloquent)</p>
+        </footer>
+    </div>
+    
+    <script src="/script.js"></script>
+    <script src="./script2.js"></script>
+</body>
+</html>

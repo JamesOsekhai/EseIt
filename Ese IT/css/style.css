@@ -1,0 +1,373 @@
+@import 'fonts.css';
+@import 'gpa.css';
+@import 'calc.css';
+@import 'lib.css';
+@import 'book.css';
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+#container{
+    width: 100%;
+}
+#my-header{
+    width: 100%;
+    height: 400px;
+    background-image: url(../Images/porter-raab-gnj9vj--FRY-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #1561bdbd;
+}
+.menu{
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+
+}
+.logo{
+    width: 120px;
+    height: 120px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#btn{
+    padding: 7px 10px;
+    font-size: 20px;
+    border: none;
+    background-color: #1560BD;
+    color: #fff;
+    font-weight: bold;
+}
+.toggle{
+    margin-left: 15px;
+}
+.nav{
+    background-color: #002366;
+    color: #fff;
+    position: absolute;
+    display: none;
+    width: 100%;
+    padding: 10px 0;
+    height: 0;
+    top: 0;
+    transition: 2s;
+    overflow: hidden;
+    z-index: 1;
+}
+.active{
+    height: auto;
+    display: initial !important;
+}
+.nav nav ul{
+    display: flex;
+    flex-direction: column;
+    
+}
+.nav nav ul li{
+    margin-top: 25px;
+    text-align: center;
+    padding: 10px;
+    list-style-type: none;
+}
+.nav nav ul li:hover{
+    background: #1560BD;
+}
+.nav nav ul li a{
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-family: fontE;
+}
+.close{
+    color: white;
+    font-size: 20px;
+    border: none;
+    width: 20px;
+    text-align: center;
+    background: none;
+}
+#null{
+    background: none;
+}
+
+.phy{
+    padding: 20px;
+}
+.phy h3{
+    color: white;
+    font-family: fontE;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-name: depart;
+    position: relative;
+}
+@keyframes depart {
+    0%{
+        left: -200px;
+    }
+    100%{
+        left: 0;
+    }
+}
+.phy p{
+    color: white;
+    font-family: fontE;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 25px;
+    animation-duration: 5s;
+    animation-name: depart;
+    position: relative;
+}
+.con{
+    margin-top: 20px;
+    animation-name: con;
+    animation-duration: 10s;
+    position: relative;
+}
+@keyframes con {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#cont{
+    padding: 10px 20px;
+    background-color: #1560BD;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-family: fontE;
+    font-weight: bold;
+}
+.all{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    padding: 20px;
+}
+.all h3{
+    text-align: center;
+    font-family: fontE;
+    font-size: 20px;
+    color: #002366;
+}
+.cal-lib{
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.cal{
+    min-width: 300px;
+    height: 430px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 15px 0 rgba(0, 0, 0, 0.15);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    animation-name: cal;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+.lib{
+    min-width: 300px;
+    height: 430px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 15px 0 rgba(0, 0, 0, 0.15);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    animation-name: cal;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+@keyframes cal {
+    0%{
+        top: -70px;
+    }
+    100%{
+        top: 0;
+    }
+}
+.lib-img{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.lib-img img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.lib-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.lib-name h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.lib-name p{
+    font-family: fontE;
+    line-height: 2;
+    text-align: center;
+}
+.go{
+    margin-top: 15px;
+}
+.go a{
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #1560BD;
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+    font-family: fontE;
+}
+footer{
+    margin-top: 40px;
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-family: fontA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1560BD;
+}
+
+@media screen and (min-width:500px) {
+    .toggle{
+        display: none;
+    }
+    .menu{
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .nav{
+        position: static;
+        display: flex !important;
+        background: none;
+        width: auto;
+        height: auto;
+    }
+    #my-header{
+        height: 600px;
+        
+    }
+    .nav nav ul{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .nav nav ul li{
+        margin-right: 40px;
+        font-family: fontE;
+        font-size: 25px;
+        
+    }
+    #null{
+        display: none;
+    }
+    .phy{
+        margin-top: 30px;
+        gap: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .phy h3{
+        color: #fff;
+        font-size: 30px;
+    }
+    .phy p{
+        font-size: 40px;
+    }
+    #cont{
+        padding: 15px 25px;
+    }
+    .cal{
+        width: 450px;
+        height: 500px;
+    }
+    .lib{
+        width: 450px;
+        height: 500px;
+    }
+    .lib-img{
+        height: 300px;
+    }
+    .calculators{
+        min-width: 400px;
+    }
+    .calc{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .inp input{
+        width: 100px;
+    }  
+    .choose{
+        min-width: 40%;
+    }
+    .book-img{
+        font-size: 40px;
+        height:500px ;
+    }
+    .chec{
+        padding: 15px 25px;
+        font-size: 20px;
+        border-radius: 30px;
+    }
+    .mask-image{
+        width: 55%;
+    }
+    .text{
+        width: 30%;
+    }
+    .text h2{
+        font-size: 30px;
+    }
+    .text p{
+        font-size: 20px;
+        line-height: 2;
+    }
+    .text button{
+        padding: 15px 25px;
+        font-size: 17px;
+    }
+}

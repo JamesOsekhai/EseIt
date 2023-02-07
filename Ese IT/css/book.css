@@ -1,0 +1,146 @@
+.my-book{
+    margin-top: 50px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.book-img{
+    background-image: url(../Images/vlad-kutepov-BplhhW_JyhQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    background-blend-mode: multiply;
+    background-color: #1561bdbd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 25px;
+    font-family: fontA;
+    text-align: center;
+    line-height: 2;
+    flex-direction: column;
+    
+}
+.chec{
+    font-size: 14px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: #1560BD;
+    border-radius: 20px;
+}
+.all-book{
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+
+}
+.book{
+    min-width: 300px;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.151), 0 6px 15px 0 rgba(0, 0, 0, 0.158);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 5px;
+    transition: all 1s ease-in-out;
+}
+.book:hover{
+    transform: scale(0.9);
+}
+.book img{
+    width: 70%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+.book p{
+    margin-top: 20px;
+    font-family: fontA;
+    line-height: 1.3;
+    font-weight: 800;
+}
+.a{
+    margin-top: 20px;
+}
+.a a{
+    text-decoration: none;
+    padding: 10px  40px;
+    color: white;
+    background-color: #1560BD;
+    border-radius: 30px;
+    font-family: fontA;
+    transition: all 1s ease-in-out;
+}
+.a a:hover{
+    background-color: #084999;
+}
+.mask{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.mask-image{
+    background-image: url(../Images/priscilla-du-preez-XkKCui44iM0-unsplash.jpg);
+    background-position: 1%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width:100%;
+    position: relative;
+}
+.mask-image::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../Images/splash.jpg);
+    background-position: 50%;
+    background-size: cover;
+    mix-blend-mode: screen;
+}
+.text{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+.text h2{
+    font-family: fontA;
+    font-weight: 800;
+    color: #1560BD;
+}
+.text p{
+    font-family: fontE;
+    line-height: 1.5;
+    text-align: justify;
+    margin-top: 20px;
+}
+.text button{
+    margin-top: 20px;
+    background-color: #1560BD;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: #fff;
+    font-family: fontA;
+    font-weight: 500;
+}
